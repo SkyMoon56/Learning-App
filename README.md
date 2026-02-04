@@ -1,64 +1,32 @@
-# Language Practice App
-A community-driven practice service designed to help language learners catalogue vocabulary and master it through interactive mini-games and AI-generated dialogues. Unlike traditional learning apps, this focuses on retention and application of the words you are already studying. 
+# Language Practice App 🌍
 
-🚀 Key Features
+A personalized vocabulary "vault" and practice service designed to bridge the gap between learning new words and actually using them. This app allows users to catalogue their own study sets, import from Quizlet, and play interactive games powered by their own data.
 
-Flexible Vocab Upload: Streamlined uploading for custom vocabulary sets. 
+## ✨ Key Features
 
+* **Custom Vocab Vault:** Streamlined uploading for custom vocabulary, supporting multi-level formats (e.g., Chinese Characters + Pinyin + English).
+* **Quizlet Import:** Seamlessly sync your existing study sets to get started in seconds.
+* **AI-Powered Dialogues:** Generate realistic conversations using only the vocabulary you have uploaded to practice context.
+* **Privacy Control:** Keep your sets private for personal use or make them public to contribute to the community library.
+* **Cross-Platform Practice:** A consistent experience designed to work across different languages and scripts.
 
-Quizlet Integration: Easily import your existing Quizlet flashcards to jumpstart your practice. 
+## 🕹️ The Game Suite
 
+Practice your words through several interactive modes:
+* **Word Swipe:** A fast-paced recognition game focusing on definitions and pronunciations.
+* **Whack-a-Mole:** Rapid-fire character recognition.
+* **Sentence Unscrambler:** Master grammar by rebuilding sentences from your vocab list.
+* **TypeRacer:** A spelling-focused game with "hover-to-learn" tooltips for complex characters.
+* **Bingo:** Multiplayer noun-recognition games for community sets.
 
-Multi-Level Language Support: Handles complex language structures, such as Chinese (Character, Pinyin, and Translation) and French. 
+## 🛠️ Technical Overview
 
+The app is built with a flexible component-based architecture to handle different language requirements:
+* **Database:** Structured to support $N$ levels of translation (Meanings, Phonetics, Scripts).
+* **Algorithm:** Template-driven game logic that dynamically adjusts based on the language metadata.
 
-Interactive Mini-Games: Practice using your own vocabulary in games like Word Swipe, Whack-a-Mole, and Sentence Unscramblers. 
+## 🚀 Getting Started
 
-
-AI Dialogues: Generate realistic practice dialogues based specifically on the vocabulary you’ve uploaded. 
-
-
-Social Learning: Choose to keep your sets private or make them public to help others in the community. 
-
-🎮 Included Games
-
-Word Swipe: Combines English definitions, pinyin, and characters for rapid-fire recognition. 
-
-
-Whack-a-Mole: Focuses on quick character or word recognition. 
-
-
-Sentence Unscrambler: Helps master grammar by arranging your vocab into correct structures. 
-
-
-Typeracer: A spelling and speed focused game where you can hover over characters to learn as you type. 
-
-
-Bingo: A multiplayer mode focused on noun recognition. 
-
-🛠 Tech Stack (Suggested)
-Frontend: Flutter or React Native (for cross-platform support).
-
-Backend: Firebase or Supabase (for user accounts and real-time multiplayer).
-
-AI Integration: Gemini API or GPT-4o (for dialogue generation).
-
-📂 Project Structure
-Plaintext
-├── assets/             # Game sprites and UI icons
-├── src/
-│   ├── components/     # Reusable UI elements (cards, inputs)
-│   ├── games/          # Logic for the individual mini-games
-│   ├── services/       # API logic for Quizlet and AI generation
-│   └── store/          # Global state (user vocab, settings)
-└── README.md
-📝 Roadmap
-[ ] Core Database Schema for multi-level vocabulary.
-
-[ ] Quizlet Import functionality.
-
-[ ] MVP of "Word Swipe" and "Sentence Unscrambler."
-
-[ ] AI Dialogue generation engine.
-
-[ ] Public/Private account sharing system.
+1. **Clone the repo**
+   ```bash
+   git clone [https://github.com/your-username/language-app.git](https://github.com/your-username/language-app.git)
