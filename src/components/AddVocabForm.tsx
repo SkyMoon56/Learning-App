@@ -24,7 +24,7 @@ const AddVocabForm = () => {
       <div style={{ marginBottom: '10px' }}>
         <label>Meaning (English): </label>
         <input 
-          value={meaning} 
+          value={meaning}
           onChange={(e) => setMeaning(e.target.value)} 
           placeholder="e.g. Clothes"
         />
