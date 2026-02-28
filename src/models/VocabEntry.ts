@@ -1,6 +1,6 @@
 export interface VocabEntry {
   id: string;
-  language: 'zh' | 'fr' | 'en';
+  language: 'zh' | 'fr' | 'es';
   meaning: string; 
   phonetic?: string; 
   word: string; 
