@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
+import { useVocab } from '../context/VocabContext';
 
 const AddVocabForm = () => {
-  // These "States" hold whatever you type into the boxes
-  const [meaning, setMeaning] = useState('');
-  const [phonetic, setPhonetic] = useState('');
-  const [word, setWord] = useState('');
+ const { addEntry } = useVocab();
 
-  const handleSave = () => {
-    // For now, we just alert the info to show it works!
-    alert(`Saved: ${word} (${phonetic}) means ${meaning}`);
-    
-    // Clear the boxes after saving
-    setMeaning('');
-    setPhonetic('');
-    setWord('');
+ const handleSave = () => {
+  if (!meaning || !word) return alert('Word and meaning are required');
+  addEntry({
+    language: 'zh',       //make this a dropdown later
+    meaning,
+    phonetic: phonetic || undefined,
+    word,
+    isPublic: false,
+    tags: [],
+  });
+  setMeaning('');
+  setPhonetic('');
+  setWord('');
+};
   };
 
   return (
