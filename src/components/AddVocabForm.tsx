@@ -2,22 +2,24 @@ import React, { useState } from 'react';
 import { useVocab } from '../context/VocabContext';
 
 const AddVocabForm = () => {
- const { addEntry } = useVocab();
+  const { addEntry } = useVocab();
+  const [meaning, setMeaning] = useState('');
+  const [phonetic, setPhonetic] = useState('');
+  const [word, setWord] = useState('');
 
- const handleSave = () => {
-  if (!meaning || !word) return alert('Word and meaning are required');
-  addEntry({
-    language: 'zh',       //make this a dropdown later
-    meaning,
-    phonetic: phonetic || undefined,
-    word,
-    isPublic: false,
-    tags: [],
-  });
-  setMeaning('');
-  setPhonetic('');
-  setWord('');
-};
+  const handleSave = () => {
+    if (!meaning || !word) return alert('Word and meaning are required');
+    addEntry({
+      language: 'zh',       //make this a dropdown later
+      meaning,
+      phonetic: phonetic || undefined,
+      word,
+      isPublic: false,
+      tags: [],
+    });
+    setMeaning('');
+    setPhonetic('');
+    setWord('');
   };
 
   return (
