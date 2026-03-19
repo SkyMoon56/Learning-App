@@ -27,6 +27,6 @@ export const geminiService = {
 };
 ```
 
-You also need to add your API key to a `.env` file at your project root:
+Need to add API key to a `.env` file at your project root:
 ```
 REACT_APP_GEMINI_API_KEY=your_key_here
